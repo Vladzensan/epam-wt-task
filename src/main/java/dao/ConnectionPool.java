@@ -14,23 +14,21 @@ public class ConnectionPool {
     private static ConnectionPool pool;
     private static final int POOL_SIZE = 4;
 
-    public static ConnectionPool getConnectionPool() throws ConnectionException{
-        if (pool == null) {
-            try {
-                InitialContext initContext = new InitialContext();
-                Context envContext = (Context) initContext.lookup("java:/comp/env");
-                DataSource dataSource = (DataSource) envContext.lookup("jdbc/WT-DB");
+    private ConnectionPool() {
+        try {
+            InitialContext initContext = new InitialContext();
+            Context envContext = (Context) initContext.lookup("java:/comp/env");
+            DataSource dataSource = (DataSource) envContext.lookup("jdbc/WT-DB");
 
-                for (int i = 0; i < POOL_SIZE; i++) {
-                    connections.add(dataSource.getConnection());
-                }
-
-                pool = new ConnectionPool();
-            } catch (SQLException | NamingException e) {
-                throw new ConnectionException(e);
+            for (int i = 0; i < POOL_SIZE; i++) {
+                connections.add(dataSource.getConnection());
             }
+        } catch (SQLException | NamingException e) {
         }
-        return pool;
+    }
+
+    public static ConnectionPool getConnectionPool() {
+       return ConnectionPoolHolder.INSTANCE;
     }
 
     public Connection getConnection() {
@@ -47,5 +45,9 @@ public class ConnectionPool {
         if (!connections.contains(connection)) {
             connections.add(connection);
         }
+    }
+
+    private static class ConnectionPoolHolder {
+        static final ConnectionPool INSTANCE = new ConnectionPool();
     }
 }
