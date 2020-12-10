@@ -29,13 +29,13 @@ CREATE TABLE `category` (
 -- ----------------------------
 -- Records of category
 -- ----------------------------
-INSERT INTO `category` VALUES ('1', 'New', '');
-INSERT INTO `category` VALUES ('2', 'Sale', '');
-INSERT INTO `category` VALUES ('3', 'Style', '');
-INSERT INTO `category` VALUES ('4', 'Nam', '');
-INSERT INTO `category` VALUES ('5', 'Nữ', '');
-INSERT INTO `category` VALUES ('6', 'Dép', '');
-INSERT INTO `category` VALUES ('7', 'Nón', '');
+INSERT INTO `category` VALUES ('1', 'New', 'Quần áo mới thiết kế');
+INSERT INTO `category` VALUES ('2', 'Sale', 'Quần áo giảm giá');
+INSERT INTO `category` VALUES ('3', 'Style', 'Quần áo dạo phố');
+INSERT INTO `category` VALUES ('4', 'Nam', 'Thời trang nam');
+INSERT INTO `category` VALUES ('5', 'Nữ', 'Thời trang nữ');
+INSERT INTO `category` VALUES ('6', 'Dép', 'Dép thời trang');
+INSERT INTO `category` VALUES ('7', 'Nón', 'Nón thời trang');
 
 -- ----------------------------
 -- Table structure for history
