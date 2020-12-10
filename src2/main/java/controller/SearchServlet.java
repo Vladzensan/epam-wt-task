@@ -38,12 +38,12 @@ public class SearchServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");
 		response.setCharacterEncoding("utf-8");
-		String ten_san_pham= request.getParameter("ten_san_pham");
-		String ten_the_loai= request.getParameter("ten_the_loai");
+		String ten_san_pham= request.getParameter("tsp");
+		String ten_the_loai= request.getParameter("ttl");
 		String err="";
 		
 		if(ten_san_pham.equals("") && ten_the_loai.equals("")){
-			err+="Phải nhập ít nhất 1 thông tin tìm kiếm";
+			err+="";
 		}
 		
 		if (err.length() > 0) {

@@ -64,7 +64,7 @@ java.sql.Date ngaysinh= null;
 		String url = "/update_user.jsp";
 
 		if (password.equals("") || email.equals("") || sdt.equals("") || diachi.equals("")) {
-			err += "Phải nhập đầy đủ thông tin!";
+			err += "err";
 		} else {
 			 
 				Pattern pattenObj = Pattern

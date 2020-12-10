@@ -57,8 +57,8 @@
 	<%
 		// ham nay de lay ma san pham truyen qua tren thanh dia chj
 		String ma_san_pham = "";
-		if (request.getParameter("ma_san_pham") != null) {
-			ma_san_pham = request.getParameter("ma_san_pham");
+		if (request.getParameter("msp") != null) {
+			ma_san_pham = request.getParameter("msp");
 		}
 
 		ProductDAOImpl productDAO = new ProductDAOImpl();
@@ -103,11 +103,11 @@
 			} else {
 		%>
 		<div id="head-link">
-			<div id='menungang'>
+			<div id='wr2'>
 				<ul>
 					<li class='last'><a href="index.jsp"><span>Trang
 								chủ</span></a></li>
-					<li class='last'><a href="#"><span>Sản phẩm</span></a></li>
+					<li class='last'><a href="#"><span>Hello there</span></a></li>
 					<li class='last'><a href="search_page.jsp"><span>Tìm kiếm</span></a></li>
 					<li class='last' style="float: right;"><a href="register.jsp"><span>Đăng
 								ký</span></a></li>

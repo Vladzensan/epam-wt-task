@@ -34,7 +34,7 @@
 					<div class="clear"></div>
 				</div>
 				<div class="submit">
-					<input type="submit" value="KHÔI PHỤC">
+					<input type="submit" value="go">
 				</div>
 	
 			</form>

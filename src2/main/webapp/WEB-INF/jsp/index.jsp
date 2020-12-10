@@ -53,7 +53,7 @@
 			} else {
 		%>
 		<div id="head-link">
-			<div id='menungang'>
+			<div id='wr2'>
 				<ul>
 					<li class='last'><a href="index.jsp"><span>Trang
 								chủ</span></a></li>
@@ -77,8 +77,8 @@
 						List<Product> list = new ArrayList<Product>();
 						list = productDAO.getList();
 						String ma_the_loai = null;
-						if (request.getParameter("ma_the_loai") != null) {
-					ma_the_loai = request.getParameter("ma_the_loai");
+						if (request.getParameter("mtl") != null) {
+					ma_the_loai = request.getParameter("mtl");
 						}
 						NumberFormat nf = NumberFormat.getInstance();
 						nf.setMinimumFractionDigits(0);
@@ -93,18 +93,18 @@
 
 						<li class="preorder"><span class="tagimg "> </span> <a
 							href="detail.jsp?ma_san_pham=<%=p.getMa_san_pham()%>"> <img
-								src="sanpham/<%=p.getHinh_anh()%>" width=" 250px" height="250px" />
+								src="sanpham/<%=p.getProd()%>" width=" 250px" height="250px" />
 								<h3><%=p.getTen_san_pham()%></h3>
 								<h4>
 									Giá:
 									<%=nf.format(p.getGia_ban())%>
 									VNĐ
-								</h4> <span class="textkm">Khuyến mãi trị giá đến <strong>500.000₫</strong>
+								</h4> <span class="textkm"> <strong>500.000₫</strong>
 							</span>
 								<p class="info">
-									<span>Hãng sx: <%=p.getHang_san_xuat()%>
-									</span> <span>Giá: <%=nf.format(p.getGia_ban())%> VNĐ
-									</span> <span>Thông tin: <%=p.getThong_tin()%>
+									<span>: <%=p.getProd()%>
+									</span> <span> <%=nf.format(p.getProd())%> VNĐ
+									</span> <span> <%=p.getProd()%>
 								</p>
 						</a></li>
 
@@ -122,11 +122,11 @@
 									Giá:
 									<%=nf.format(p.getGia_ban())%>
 									VNĐ
-								</h4> <span class="textkm">Khuyến mãi trị giá đến <strong>500.000₫</strong>
+								</h4> <span class="textkm">preorder <strong>500.000₫</strong>
 							</span>
 								<p class="info">
-									<span>Hãng sx: <%=p.getHang_san_xuat()%></span> <span>Giá:
-										<%=nf.format(p.getGia_ban())%> VNĐ</span> <span>Thông tin: <%=p.getThong_tin()%>
+									<span>: <%=p.getHang_san_xuat()%></span> <span>:
+										<%=nf.format(p.getGia_ban())%> VNĐ</span> <span> <%=p.getPreorder()%>
 								</p>
 						</a></li>
 						<%

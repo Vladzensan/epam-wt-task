@@ -8,6 +8,6 @@
 </head>
 <body>
 	<p
-		style="text-align: center; color: blue; margin-top: 10px; font-size: 14px; font-weight: bold; font-family: calibri;">Lập trình ứng dụng Java © 2015 by 1212050</p>
+		style="text-align: center; color: blue; margin-top: 10px; font-size: 14px; font-weight: bold; font-family: calibri;"></p>
 </body>
 </html>

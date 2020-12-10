@@ -40,11 +40,11 @@
 				<ul>
 					<li class='last'><a href="index.jsp"><span>Trang
 								chủ</span></a></li>
-					<li class='last'><a href="product.jsp"><span>Sản phẩm</span></a></li>
-					<li class='last'><a href="cart.jsp"><span>Giỏ hàng</span></a></li>
-					<li class='last'><a href="search_page.jsp"><span>Tìm kiếm</span></a></li>
-					<li class='last' style="float: right;"><a href="LogoutServlet"><span>Đăng
-								xuất</span></a></li>
+					<li class='last'><a href="product.jsp"><span>products</span></a></li>
+					<li class='last'><a href="cart.jsp"><span>cart</span></a></li>
+					<li class='last'><a href="search_page.jsp"><span>search</span></a></li>
+					<li class='last' style="float: right;"><a href="LogoutServlet"><span>logout
+								</span></a></li>
 					<li class='last' style="float: right;"><a href="update_user.jsp?username=<%=username %>"><span><%=username%></span></a></li>
 				</ul>
 			</div>
@@ -55,14 +55,14 @@
 		<div id="head-link">
 			<div id='menungang'>
 				<ul>
-					<li class='last'><a href="index.jsp"><span>Trang
-								chủ</span></a></li>
-					<li class='last'><a href="product.jsp"><span>Sản phẩm</span></a></li>
-					<li class='last'><a href="search_page.jsp"><span>Tìm kiếm</span></a></li>
-					<li class='last' style="float: right;"><a href="register.jsp"><span>Đăng
-								ký</span></a></li>
-					<li class='last' style="float: right;"><a href="login.jsp"><span>Đăng
-								nhập</span></a></li>
+					<li class='last'><a href="index.jsp"><span>
+								</span></a></li>
+					<li class='last'><a href="product.jsp"><span></span></a></li>
+					<li class='last'><a href="search_page.jsp"><span></span></a></li>
+					<li class='last' style="float: right;"><a href="register.jsp"><span>
+								</span></a></li>
+					<li class='last' style="float: right;"><a href="login.jsp"><span>
+								</span></a></li>
 				</ul>
 			</div>
 		</div>
@@ -114,7 +114,7 @@
 								</h4> <span class="textkm">Khuyến mãi trị giá đến <strong>500.000₫</strong>
 							</span>
 								<p class="info">
-									<span>Hãng sx: <%=p.getHang_san_xuat()%>
+									<span>: <%=p.getHang_san_xuat()%>
 									</span> <span>Giá: <%=nf.format(p.getGia_ban())%> VNĐ
 									</span> <span>Thông tin: <%=p.getThong_tin()%>
 								</p>

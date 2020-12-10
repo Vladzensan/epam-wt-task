@@ -60,10 +60,10 @@ public class ResetPassword extends HttpServlet {
 		
 		String err = "";
 		if (username.equals("")) {
-			err += "Phải nhập đầy đủ thông tin!";
+			err += "username error";
 		} else {
 			if (userDAO.checkUser(username) == false) {
-				err += "Tên đăng nhập không tồn tại!";
+				err += "error occurred";
 			}
 		}
 

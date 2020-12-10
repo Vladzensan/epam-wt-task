@@ -30,15 +30,15 @@
 				Mật khẩu	
 				<li><input type="password" value=""
 					name="password"><a href="#" class=" icon2 lock2"></a></li>
-				Ngày sinh
+				pass
 				<li><input type="date" value=""
-					name="ngaysinh"><a href="#" class=" icon2 lock2"></a></li>
-				Giới tính
+					name="f"><a href="#" class=" icon2 lock2"></a></li>
+				birth date
 				<li><input type="text" value="" list="exampleList"
 					name="gioitinh"> 
 					<datalist id="exampleList">
-					<option value="Nam">
-					<option value="Nữ">
+					<option value="wr">
+					<option value="wef">
 					</datalist><a href="#" class=" icon2 lock2"></a></li>
 				Email
 				<li><input type="text" value=""
@@ -52,13 +52,13 @@
 					
 				<div class="p-container">
 					<label class="checkbox two"><input type="checkbox"
-						name="checkbox" checked><i></i>Tôi đồng ý <a href="#">Điều khoản dịch vụ</a></label>
+						name="checkbox" checked><i></i> <a href="#">Checker</a></label>
 				</div>
 				<div class="submit two">
 					<input type="submit" value="ĐĂNG KÝ">
 				</div>
 				<h5>
-					<a href="login.jsp">Đăng nhập</a>
+					<a href="login.jsp">Login</a>
 				</h5>
 			</form>
 		</div>
